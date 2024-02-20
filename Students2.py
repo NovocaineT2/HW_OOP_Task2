@@ -41,18 +41,3 @@ class Reviewer(Mentor):
                 student.grades[course] = [grade]
         else:
             return 'Ошибка'
-
-best_student = Student('Ruoy', 'Eman', 'your_gender')
-best_student.courses_in_progress += ['Python']
-best_student_2 = Student('Misha', 'Sipl', 'M')
-best_student_2.courses_in_progress += ['Python']
-best_student_2.finished_courses += ['Java']
-
-best_lecturer = Lecturer('Vasya','Pupkin')
-best_lecturer.courses += ['Python']
-best_lecturer.courses += ['Java']
-
-best_student.rate_lect(best_lecturer, 'Python', 10)
-best_student_2.rate_lect(best_lecturer, 'Java', 9)
-print (best_lecturer.grades)
- 
